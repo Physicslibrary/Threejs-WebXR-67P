@@ -1,2 +1,45 @@
 # Threejs-WebXR-67P (under construction)
-Visualize the size of 67P comet with WebXR
+
+Visualize the size of 67P comet with Oculus Quest.
+
+This project was inspired by a European Space Agency's webpage explaining the relative size of the Rosetta space probe to comet 67P/Churyumov-Gerasimenko:
+ 
+[ESA: How big is Rosetta compared with the comet?](http://sci.esa.int/rosetta/54831-how-big-is-rosetta-compared-with-the-comet/)
+ 
+With ESA and NASA open sourcing their data such as 3D models and images, tools such as THREE.js, a modern web browser with WebXR, and Blender can be coded to visualize scaled models of a comet (4100m) and Rosetta (31m) in virtual reality.
+
+# Hardware
+
+1. Oculus Quest.<br>
+
+# Software
+
+Oculus Browser
+
+FireFox Reality
+
+THREE.js
+
+Blender
+
+# Installation
+
+# Credits
+ 
+ESA_Gaia_DR2_AllSky_Brightness_Colour_Cartesian_2000x1000.png<br>
+Date: 25 April 2018<br>
+Satellite: Gaia<br>
+Copyright: ESA/Gaia/DPAC, CC BY-SA 3.0 IGO<br>
+http://sci.esa.int/gaia/60196-gaia-s-sky-in-colour-equirectangular-projection/<br>
+ 
+CSHP_DV_257_01_______00343.obj (OBJ File 3.8MB)<br>
+Copyright: ESA/Rosetta/NAVCAM – CC BY-SA IGO 3.0<br>
+https://imagearchives.esac.esa.int/index.php?/page/navcam_3d_models<br>
+https://imagearchives.esac.esa.int/index.php?/page/copyright_information<br>
+
+Rosetta.blend (Rosetta.zip 4MB)<br>
+Author/Origin: Eyes on the Solar System. NASA/JPL-Caltech<br>
+https://nasa3d.arc.nasa.gov/detail/eoss-rosetta<br>
+https://www.nasa.gov/multimedia/guidelines/index.html<br>
+
+Copyright (c) 2019 Hartwell Fong
