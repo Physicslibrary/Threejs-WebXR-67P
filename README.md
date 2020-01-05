@@ -6,7 +6,7 @@ This project was inspired by a European Space Agency's webpage explaining the re
  
 [ESA: How big is Rosetta compared with the comet?](http://sci.esa.int/rosetta/54831-how-big-is-rosetta-compared-with-the-comet/)
  
-With ESA and NASA open sourcing their data such as 3D models and images, tools such as THREE.js, a modern web browser with WebXR, and Blender can be coded to visualize scaled models of a comet (4100m) and Rosetta (31m) in virtual reality.
+With ESA and NASA open sourcing their data such as 3D models and images, tools such as Three.js, a modern web browser with WebXR, and Blender can be used to visualize models of a comet (4100m) and Rosetta (31m) in virtual reality.
 
 # Hardware
 
@@ -14,13 +14,11 @@ With ESA and NASA open sourcing their data such as 3D models and images, tools s
 
 # Software
 
-Oculus Browser
+Oculus Browser (Oculus Quest Firmware update 12.0 or latest).
 
-FireFox Reality
+Three.js from threejs.org.
 
-THREE.js
-
-Blender
+Blender 2.81 is used to import 3D models CSHP_DV_257_01_______00343.obj and Rosetta.blend and exported in format that Three.js can read.
 
 # Installation
 
@@ -41,5 +39,15 @@ Rosetta.blend (Rosetta.zip 4MB)<br>
 Author/Origin: Eyes on the Solar System. NASA/JPL-Caltech<br>
 https://nasa3d.arc.nasa.gov/detail/eoss-rosetta<br>
 https://www.nasa.gov/multimedia/guidelines/index.html<br>
+
+# References
+
+https://threejs.org/
+
+https://github.com/mrdoob/three.js/
+
+https://threejsfundamentals.org/
+
+https://discourse.threejs.org/t/three-js-developer-tools/8477
 
 Copyright (c) 2019 Hartwell Fong
