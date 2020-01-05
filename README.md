@@ -17,6 +17,8 @@ https://physicslibrary.github.io/Threejs-WebXR-67P/test/hello.html
 
 https://physicslibrary.github.io/Threejs-WebXR-67P/test/threejs.html
 
+https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html
+
 # Hardware
 
 1. Oculus Quest.<br>
