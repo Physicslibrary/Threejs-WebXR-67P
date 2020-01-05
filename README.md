@@ -15,6 +15,8 @@ https://physicslibrary.github.io/Threejs-WebXR-67P
 
 https://physicslibrary.github.io/Threejs-WebXR-67P/test/hello.html
 
+https://physicslibrary.github.io/Threejs-WebXR-67P/test/threejs.html
+
 # Hardware
 
 1. Oculus Quest.<br>
