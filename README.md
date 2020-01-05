@@ -8,6 +8,9 @@ This project was inspired by a European Space Agency's webpage explaining the re
  
 With ESA and NASA open sourcing their data such as 3D models and images, tools such as Three.js, a modern web browser with WebXR, and Blender can be used to visualize models of a comet (4100m) and Rosetta (31m) in virtual reality.
 
+## Threejs-WebXR-67P Repository
+https://github.com/Physicslibrary/Threejs-WebXR-67P
+
 # Hardware
 
 1. Oculus Quest.<br>
