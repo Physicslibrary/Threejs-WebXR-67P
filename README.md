@@ -11,6 +11,8 @@ With ESA and NASA open sourcing their data such as 3D models and images, tools s
 ## Threejs-WebXR-67P Repository
 https://github.com/Physicslibrary/Threejs-WebXR-67P
 
+https://physicslibrary.github.io/Threejs-WebXR-67P
+
 # Hardware
 
 1. Oculus Quest.<br>
