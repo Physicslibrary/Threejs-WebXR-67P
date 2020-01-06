@@ -36,7 +36,9 @@ No installation. In Oculus Quest, open Oculus Browser and go to link (still test
 
 [https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html](https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html)
 
-The examples use Oculus Touch controllers to "fly" around Rosetta and comet 67P. It implements a simple way to move around 3D by making a "velocity vector" from left to right controllers.<br>
+With Oculus Quest's 6DOF tracking, freely move around Rosetta/67P within Oculus Guardian system. Use Oculus Touch controllers to go to areas out of reach.<br>
+
+Use Oculus Touch controllers to "fly" around Rosetta and comet 67P. It implements a simple way to move around 3D by making a "velocity vector" from left to right controllers.<br>
 
 The distance between controllers is the speed (next to each other is the lowest speed).<br>
 
