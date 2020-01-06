@@ -34,7 +34,7 @@ Oculus Browser (Oculus Quest Firmware update 12.0 or latest, supporting WebXR).
 
 No installation. In Oculus Quest, open Oculus Browser and go to link (still testing):
 
-[https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html](https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html)
+[https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-100-scale.html](https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-100-scale.html)
 
 With Oculus Quest's 6DOF tracking, freely move around Rosetta/67P within Oculus Guardian system. Use Oculus Touch controllers to go to areas out of reach.<br>
 
