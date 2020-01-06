@@ -10,7 +10,7 @@ Rosetta 1km from 67P comet.
 
 <img src="images/com.oculus.vrshell-20200104-105252.jpg" width="640">
 
-Rosetta 1km from 67P comet.
+Rosetta 10km from 67P comet.
 
 This project was inspired by a European Space Agency's webpage explaining the relative size of the Rosetta space probe to comet 67P/Churyumov-Gerasimenko:
  
