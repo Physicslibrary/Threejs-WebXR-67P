@@ -38,7 +38,7 @@ No installation. In Oculus Quest, open Oculus Browser and go to link:
 
 [https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-1-scale.html](https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-1-scale.html)
 
-With Oculus Quest's 6DOF tracking, freely move around Rosetta/67P within Oculus Guardian system. Use Oculus Touch controllers to go to areas out of reach.<br>
+With Oculus Quest's headset 6DOF tracking, freely walk around Rosetta/67P within Oculus Guardian system. Use Oculus Touch controllers to go to areas out of reach.<br>
 
 Use Oculus Touch controllers to "fly" around Rosetta and comet 67P. It implements a simple way to move around 3D by making a "velocity vector" from left to right controllers.<br>
 
