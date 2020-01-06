@@ -36,6 +36,20 @@ No installation. In Oculus Quest, open Oculus Browser and go to link (still test
 
 [https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html](https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html)
 
+The examples use Oculus Touch controllers to "fly" around Rosetta and comet 67P. It implements a simple way to move around 3D by making a "velocity vector" from left to right controllers.<br>
+
+The distance between controllers is the speed (next to each other is the lowest speed).<br>
+
+Press one front trigger to move (two triggers to double speed).<br>
+
+Hold the left controller fixed and point the right controller in the direction to move.<br>
+
+The simple "fly" code is based on webvr_vr_ballshooter.html before the recent three.js update to WebXR in December 2019.<br>
+
+Note - The white lines from the controllers are not meant for pointing direction to move but with seeing where the controllers are (codes from webvr_vr_ballshooter.html). The line is approx 1m in length so it good for something like getting rough measurement of Rosetta.<br>
+
+Other buttons on controllers do not work, yet.<br>
+
 # Credits
  
 ESA\_Gaia\_DR2\_AllSky\_Brightness\_Colour\_Cartesian\_2000x1000.png<br>
@@ -53,6 +67,14 @@ Rosetta.blend (Rosetta.zip 4MB)<br>
 Author/Origin: Eyes on the Solar System. NASA/JPL-Caltech<br>
 [https://nasa3d.arc.nasa.gov/detail/eoss-rosetta](https://nasa3d.arc.nasa.gov/detail/eoss-rosetta)<br>
 [https://www.nasa.gov/multimedia/guidelines/index.html](https://www.nasa.gov/multimedia/guidelines/index.html)<br>
+
+Blender 2.81 (or latest) is used to scale CSHP\_DV\_257\_01\_\_\_\_\_\_\_00343.obj to 4100m and is exported as "glTF Binary" 67P.glb. 
+
+Rosetta.blend (2012 version) is opened with Blender 2.81, fixed few broken things, and exported as "glTF Binary" rosetta.glb.
+ 
+https://www.blender.org/
+
+km_markers.glb is created in Blender as a series of 10mx10mx10m cubes spaced by 1km to give a sense of distance.
 
 # References
 
