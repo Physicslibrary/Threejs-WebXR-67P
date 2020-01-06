@@ -60,17 +60,31 @@ Author/Origin: Eyes on the Solar System. NASA/JPL-Caltech<br>
 
 [https://github.com/mrdoob/three.js/](https://github.com/mrdoob/three.js/)
 
-[https://threejsfundamentals.org/](https://threejsfundamentals.org/)
+Three.js examples is the best place to learn and experiment:
 
-[https://discourse.threejs.org/t/three-js-developer-tools/8477](https://discourse.threejs.org/t/three-js-developer-tools/8477)
+[https://github.com/mrdoob/three.js/tree/dev/examples](https://github.com/mrdoob/three.js/tree/dev/examples)
+
+Three.js' excellent documentation on how to convert WebGL examples to WebVR:
+
+[https://threejs.org/docs/index.html#manual/en/introduction/How-to-create-VR-content](https://threejs.org/docs/index.html#manual/en/introduction/How-to-create-VR-content)
+
+Three.js example of how to use the controllers:
+
+[https://github.com/mrdoob/three.js/blob/dev/examples/webxr_vr_ballshooter.html](https://github.com/mrdoob/three.js/blob/dev/examples/webxr_vr_ballshooter.html)
+
+Three.js example of how to load .glb file:
+
+[https://github.com/mrdoob/three.js/blob/dev/examples/webgl_loader_gltf.html](https://github.com/mrdoob/three.js/blob/dev/examples/webgl_loader_gltf.html)
+
+Near the end of the webpage is an example of displaying an equirectangular map:
+
+[https://threejsfundamentals.org/threejs/lessons/threejs-backgrounds.html](https://threejsfundamentals.org/threejs/lessons/threejs-backgrounds.html)
 
 [https://www.blender.org/](https://www.blender.org/)
 
 [Rosetta and comet 67P to scale](https://sci.esa.int/web/rosetta/-/54829-rosetta-and-comet-67p-to-scale-annotated)
 
 # Making Threejs-WebXR-67P
-
-Three.js
 
 Blender 2.81 to import 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend and exported in format that Three.js can read.
 
