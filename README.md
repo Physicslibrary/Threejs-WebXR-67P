@@ -1,4 +1,4 @@
-# Threejs-WebXR-67P (under construction)
+# Threejs-WebXR-67P
 
 Visualize the size of comet 67P/Churyumov-Gerasimenko in Oculus Quest.
 
@@ -32,7 +32,7 @@ Oculus Browser (Oculus Quest Firmware update 12.0 or latest, supporting WebXR).
 
 # Installation
 
-No installation. In Oculus Quest, open Oculus Browser and go to link (still testing):
+No installation. In Oculus Quest, open Oculus Browser and go to link:
 
 [https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-100-scale.html](https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-100-scale.html)
 
@@ -72,7 +72,7 @@ Author/Origin: Eyes on the Solar System. NASA/JPL-Caltech<br>
 [https://nasa3d.arc.nasa.gov/detail/eoss-rosetta](https://nasa3d.arc.nasa.gov/detail/eoss-rosetta)<br>
 [https://www.nasa.gov/multimedia/guidelines/index.html](https://www.nasa.gov/multimedia/guidelines/index.html)<br>
 
-Blender 2.81 (or latest) is used to scale CSHP\_DV\_257\_01\_\_\_\_\_\_\_00343.obj to 4100m and is exported as "glTF Binary" 67P.glb. 
+Blender 2.81 (or latest) is used to scale CSHP\_DV\_257\_01\_\_\_\_\_\_\_00343.obj to 4100m and exported as "glTF Binary" 67P.glb. 
 
 Rosetta.blend (2012 version) is opened with Blender 2.81, fixed few broken things, and exported as "glTF Binary" rosetta.glb.
  
