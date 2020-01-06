@@ -50,7 +50,7 @@ Hold the left controller fixed and point the right controller in the direction t
 
 The simple "fly" code is based on webvr_vr_ballshooter.html before the recent three.js update to WebXR in December 2019.<br>
 
-Note - The white lines from the controllers are not meant for pointing direction to move but with seeing where the controllers are (codes from webvr_vr_ballshooter.html). The line is approx 1m in length so it good for something like getting rough measurement of Rosetta.<br>
+Note - The white lines from the controllers are not for pointing direction to move but with seeing where the controllers are (codes from webvr_vr_ballshooter.html). The line is approx 1m in length so it good for something like getting rough measurement of Rosetta.<br>
 
 Other buttons on controllers do not work, yet.<br>
 
