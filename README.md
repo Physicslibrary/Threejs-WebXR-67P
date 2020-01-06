@@ -78,7 +78,7 @@ Rosetta.blend (2012 version) is opened with Blender 2.81, fixed few broken thing
  
 https://www.blender.org/
 
-km_markers.glb is created in Blender as a series of 10mx10mx10m cubes spaced by 1km to give a sense of distance.
+km_markers.glb is created in Blender as a series of 10x10x10m cubes spaced by 1km to give a sense of distance.
 
 # References
 
