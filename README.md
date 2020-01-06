@@ -1,10 +1,16 @@
 # Threejs-WebXR-67P (under construction)
 
-Visualize the size of 67P comet with Oculus Quest.
+Visualize the size of comet 67P/Churyumov-Gerasimenko with Oculus Quest.
 
-<img src="images/67P-1.jpg" width="640">
-<img src="images/67P-2.jpg" width="640">
-<img src="images/67P-3.jpg" width="640">
+<img src="images/com.oculus.vrshell-20200104-104034.jpg" width="640">
+
+<img src="images/com.oculus.vrshell-20200104-105029.jpg" width="640">
+
+Rosetta 1km from 67P comet.
+
+<img src="images/com.oculus.vrshell-20200104-105252.jpg" width="640">
+
+Rosetta 1km from 67P comet.
 
 This project was inspired by a European Space Agency's webpage explaining the relative size of the Rosetta space probe to comet 67P/Churyumov-Gerasimenko:
  
@@ -12,17 +18,13 @@ This project was inspired by a European Space Agency's webpage explaining the re
  
 With ESA and NASA open sourcing their data such as 3D models and images, Three.js, a modern web browser with WebXR, and Blender can be used to visualize models of a comet (4100m) and Rosetta (31m) in virtual reality.
 
-# Threejs-WebXR-67P Repository
-
-[https://github.com/Physicslibrary/Threejs-WebXR-67P](https://github.com/Physicslibrary/Threejs-WebXR-67P)
-
 # Threejs-WebXR-67P Pages
 
 [https://physicslibrary.github.io/Threejs-WebXR-67P](https://physicslibrary.github.io/Threejs-WebXR-67P)
 
 # Hardware
 
-1. Oculus Quest.<br>
+Recommended Oculus Quest.<br>
 
 # Software
 
@@ -30,7 +32,7 @@ Oculus Browser (Oculus Quest Firmware update 12.0 or latest).
 
 # Installation
 
-With Oculus Quest, open Oculus Browser and link:
+No installation. In Oculus Quest, open Oculus Browser and go to link (still testing):
 
 [https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html](https://physicslibrary.github.io/Threejs-WebXR-67P/test/webxr_vr_ballshooter-2.html)
 
@@ -63,6 +65,8 @@ Author/Origin: Eyes on the Solar System. NASA/JPL-Caltech<br>
 [https://discourse.threejs.org/t/three-js-developer-tools/8477](https://discourse.threejs.org/t/three-js-developer-tools/8477)
 
 [https://www.blender.org/](https://www.blender.org/)
+
+[Rosetta and comet 67P to scale](https://sci.esa.int/web/rosetta/-/54829-rosetta-and-comet-67p-to-scale-annotated)
 
 # Making Threejs-WebXR-67P
 
