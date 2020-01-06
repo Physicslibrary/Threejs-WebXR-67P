@@ -24,7 +24,7 @@ With ESA and NASA open sourcing their data such as 3D models and images, Three.j
 
 # Hardware
 
-Recommended Oculus Quest.<br>
+Oculus Quest recommended (may work in other VR platforms with browsers supporting WebXR).<br>
 
 # Software
 
