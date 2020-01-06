@@ -16,7 +16,7 @@ This project was inspired by a European Space Agency's webpage explaining the re
  
 [ESA: How big is Rosetta compared with the comet?](http://sci.esa.int/rosetta/54831-how-big-is-rosetta-compared-with-the-comet/)
  
-With ESA and NASA open sourcing their data such as 3D models and images, Three.js, a modern web browser with WebXR, and Blender can be used to visualize models of a comet (4100m) and Rosetta (31m) in virtual reality.
+With ESA and NASA open sourcing their data such as 3D models and images, Three.js, a modern web browser with WebXR, and Blender can be used to visualize models of a comet (4100m) and Rosetta (32m) in virtual reality.
 
 # Threejs-WebXR-67P Pages
 
