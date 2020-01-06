@@ -1,6 +1,6 @@
 # Threejs-WebXR-67P (under construction)
 
-Visualize the size of comet 67P/Churyumov-Gerasimenko with Oculus Quest.
+Visualize the size of comet 67P/Churyumov-Gerasimenko in Oculus Quest.
 
 <img src="images/com.oculus.vrshell-20200104-104034.jpg" width="640">
 
