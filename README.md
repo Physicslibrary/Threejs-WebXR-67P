@@ -110,8 +110,8 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 [Rosetta and comet 67P to scale](https://sci.esa.int/web/rosetta/-/54829-rosetta-and-comet-67p-to-scale-annotated)
 
-# Making Threejs-WebXR-67P
+# Making Threejs-WebXR-67P (under construction)
 
-Blender 2.81 to import 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend and exported in format that Three.js can read.
+Blender 2.81 imports 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend, and exports to format three.js can read.
 
 Copyright (c) 2019 Hartwell Fong
