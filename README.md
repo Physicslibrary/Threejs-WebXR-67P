@@ -28,7 +28,7 @@ Oculus Quest recommended (required 6DOF headset/controllers).<br>
 
 # Software
 
-Oculus Browser (Oculus Quest Firmware update 12.0 or latest, supporting WebXR).
+Oculus Browser (Oculus Quest Firmware update 12.0 or later).
 
 # Installation
 
