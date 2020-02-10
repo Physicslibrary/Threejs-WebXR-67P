@@ -112,11 +112,17 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 # Making Threejs-WebXR-67P (experimental)
 
-Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ using a Node.js server:
+This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal.
+
+Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ using Node.js server:
 
 [https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally](https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally)
 
-Raspberry Pi Model 3B+ has an ethernet port and wireless LAN. We will be making the Pi into a three.js wifi server to connect the Oculus Quest.
+Raspberry Pi Model 3B+ has an ethernet port and wireless LAN. We will be making the Pi into a three.js wifi server to connect the Oculus Quest. Learn more about Raspberry Pi at:
+
+[https://www.raspberrypi.org/](https://www.raspberrypi.org/)
+
+[https://www.raspberrypi.org/help/](https://www.raspberrypi.org/help/)
 
 Get Raspbian Buster with desktop from:
 
@@ -127,6 +133,18 @@ Make a bootable Raspbian micro SD card:
 [https://www.raspberrypi.org/documentation/installation/installing-images/README.md](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
 Probably best to be connected to the internet using the ethernet port. The wireless LAN will be reconfigured and not available for internet connection.
+
+After booting Raspbian and finishing initial setup, start configuring the Pi as a wireless access point:
+
+[https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md)
+
+In the "Configuring the access point host software (hostapd)", make own NameOfNetwork and good passwork for wpa_passphrase. For this experiment, the author finishes at "Start it up" to keep thing simple (so no internet using wireless LAN but can apt-get on Pi with ethernet connection).
+
+Use this to review Terminal:
+
+[https://www.raspberrypi.org/documentation/usage/terminal/](https://www.raspberrypi.org/documentation/usage/terminal/)
+
+
 
 
 
