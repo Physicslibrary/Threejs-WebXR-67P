@@ -110,11 +110,24 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 [Rosetta and comet 67P to scale](https://sci.esa.int/web/rosetta/-/54829-rosetta-and-comet-67p-to-scale-annotated)
 
-# Making Threejs-WebXR-67P (under construction)
+# Making Threejs-WebXR-67P (experimental)
 
 Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ using a Node.js server:
 
 [https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally](https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally)
+
+Raspberry Pi Model 3B+ has an ethernet port and wireless LAN. We will be making the Pi into a three.js wifi server to connect the Oculus Quest.
+
+Get Raspbian Buster with desktop from:
+
+[https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/)
+
+Make a bootable Raspbian micro SD card:
+
+[https://www.raspberrypi.org/documentation/installation/installing-images/README.md](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+
+Probably best to be connected to the internet using the ethernet port. The wireless LAN will be reconfigured and not available for internet connection.
+
 
 
 Blender 2.81 imports 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend, and exports to format three.js can read.
