@@ -114,11 +114,11 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal.
 
-Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ using Node.js server:
+Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ using a text editor to code three.js HTML5 files and Node.js to serve them:
 
 [https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally](https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally)
 
-Raspberry Pi Model 3B+ has an ethernet port and wireless LAN. We will be making the Pi into a three.js wifi server to connect the Oculus Quest. Learn more about Raspberry Pi at:
+Raspberry Pi Model 3B+ has an ethernet port and wireless LAN. We will be making the Pi into a wifi server to connect the Oculus Quest. Learn more about Raspberry Pi at:
 
 [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
 
