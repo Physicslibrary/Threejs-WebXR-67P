@@ -112,6 +112,11 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 # Making Threejs-WebXR-67P (under construction)
 
+Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ using a Node.js server:
+
+[https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally](https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally)
+
+
 Blender 2.81 imports 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend, and exports to format three.js can read.
 
 Copyright (c) 2019 Hartwell Fong
