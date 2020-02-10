@@ -110,7 +110,7 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 [Rosetta and comet 67P to scale](https://sci.esa.int/web/rosetta/-/54829-rosetta-and-comet-67p-to-scale-annotated)
 
-# Making Threejs-WebXR-67P (experimental)
+# Making Threejs-WebXR-67P (experimental Feb 10, 2020)
 
 This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal.
 
@@ -124,7 +124,7 @@ Raspberry Pi Model 3B+ has an ethernet port and wireless LAN. We will be making 
 
 [https://www.raspberrypi.org/help/](https://www.raspberrypi.org/help/)
 
-Get Raspbian Buster with desktop from:
+Get Raspbian Buster with desktop (tested February 2020, 1138 MB version) from:
 
 [https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/)
 
@@ -144,10 +144,46 @@ Review Terminal:
 
 [https://www.raspberrypi.org/documentation/usage/terminal/](https://www.raspberrypi.org/documentation/usage/terminal/)
 
+In a Terminal, run:
 
+sudo apt-get install npm
+
+sudo apt-get install http-server -g
+
+[https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server)
+
+In home directory,
+
+mkdir webvr<br>
+
+cd webvr<br>
+
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem<br>
+
+The command is from the preceeding link in section "TLS/SSL".
+
+Open Chromium, and go to:
+
+[https://threejs.org/](https://threejs.org/)
+
+Click "download" and three.js-master.zip should download.
+
+After download is completed, extract three.js-master.zip to webvr.
+
+In webvr directory, type:
+
+http-server . -p 8000 -S
+
+In Chromium, enter "https://" + "127.0.0.1:8000" and should get a warning "Your connection is not private". Proceed in "Advanced" as you are connecting to your own Raspberry Pi.
+
+Should see something like: (picture)
+
+Go to three.js-master, examples: (picture)
+
+If the above work on Raspberry Pi, wifi connect Oculus Quest to Pi, open Oculus Browser, enter "https://" + "192.168.4.1:8000". (picture)
 
 
 
 Blender 2.81 imports 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend, and exports to format three.js can read.
 
-Copyright (c) 2019 Hartwell Fong
+<br>Copyright (c) 2019 Hartwell Fong
