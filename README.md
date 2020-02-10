@@ -150,7 +150,7 @@ sudo apt-get install npm
 
 sudo apt-get install http-server -g
 
-[https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server)
+(Ref: [https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server))
 
 In home directory,
 
