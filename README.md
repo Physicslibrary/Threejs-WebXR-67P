@@ -24,7 +24,7 @@ With ESA and NASA open sourcing their data such as 3D models and images, Three.j
 
 # Hardware
 
-Oculus Quest recommended (required 6DOF headset/controllers).<br>
+Oculus Quest recommended (required 6DoF headset/controllers).<br>
 
 # Software
 
@@ -50,7 +50,7 @@ Hold the left controller fixed and point the right controller in the direction t
 
 The simple "fly" code is based on webvr_vr_ballshooter.html before the recent three.js update to WebXR in December 2019.<br>
 
-Note - The white lines from the controllers are not for pointing direction to move but with seeing where the controllers are (codes from webvr_vr_ballshooter.html). The line is approx 1m in length so it good for something like getting rough measurement of Rosetta.<br>
+Note - The white lines from the controllers are not for pointing direction to move but with seeing where the controllers are. Each line is approx 1m in length.<br>
 
 Other buttons on controllers do not work, yet.<br>
 
@@ -176,15 +176,18 @@ http-server . -p 8000 -S
 
 In Chromium, enter ```https://127.0.0.1:8000``` and should get a warning "Your connection is not private". Proceed in "Advanced" as you are connecting to your own Raspberry Pi.
 
-Should see something like: (picture)
+Should look like the left side:
 
-Go to three.js-master, examples: (picture)
+<img src="images/2020-02-13-142043_1024x768_scrot.png" width="640">
 
-If the above work on Raspberry Pi, wifi connect Oculus Quest to Pi, open Oculus Browser, enter ```https://192.168.4.1:8000```.
+The right side is Chromium console (ctrl-shift-i) which is useful for debugging javascript codes.
+
+If the above work, wifi connect Oculus Quest to Pi, open Oculus Browser, enter ```https://192.168.4.1:8000```.
 
 <img src="images/com.oculus.vrshell-20200209-142707.jpg" width="640">
 
+Try three.js-master/examples/webxr_vr_ballshooter.html:
 
-Blender 2.81 imports 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend, and exports to format three.js can read.
+<img src="images/com.oculus.vrshell-20200209-143715.jpg" width="640">
 
 <br>Copyright (c) 2019 Hartwell Fong
