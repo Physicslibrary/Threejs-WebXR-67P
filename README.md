@@ -114,7 +114,7 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal.
 
-Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ using a text editor to code three.js HTML5 files and Node.js to serve them:
+Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ by coding three.js HTML5 files and Node.js to serve them:
 
 [https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally](https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally)
 
@@ -132,13 +132,13 @@ Make a bootable Raspbian micro SD card:
 
 [https://www.raspberrypi.org/documentation/installation/installing-images/README.md](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
-Probably best to be connected to the internet using the ethernet port. The wireless LAN will be reconfigured and not available for internet connection.
+Connect to the internet using the ethernet port. The wireless LAN will be reconfigured and not available for internet connection.
 
 After booting Raspbian and finishing initial setup, start configuring the Pi as a wireless access point:
 
 [https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md)
 
-In the "Configuring the access point host software (hostapd)", make own NameOfNetwork and good passwork for wpa_passphrase. For this experiment, the author finishes at "Start it up" to keep thing simple (so no internet using wireless LAN but can apt-get on Pi from ethernet).
+In the "Configuring the access point host software (hostapd)", make own NameOfNetwork and good passwork for wpa_passphrase. For this experiment, the author finishes at "Start it up" to keep thing simple (so no internet using wireless LAN but apt-get on Pi from ethernet).
 
 Review Terminal:
 
@@ -174,14 +174,15 @@ In webvr directory, type:
 
 http-server . -p 8000 -S
 
-In Chromium, enter "https://" + "127.0.0.1:8000" and should get a warning "Your connection is not private". Proceed in "Advanced" as you are connecting to your own Raspberry Pi.
+In Chromium, enter ```https://127.0.0.1:8000``` and should get a warning "Your connection is not private". Proceed in "Advanced" as you are connecting to your own Raspberry Pi.
 
 Should see something like: (picture)
 
 Go to three.js-master, examples: (picture)
 
-If the above work on Raspberry Pi, wifi connect Oculus Quest to Pi, open Oculus Browser, enter "https://" + "192.168.4.1:8000". (picture)
+If the above work on Raspberry Pi, wifi connect Oculus Quest to Pi, open Oculus Browser, enter ```https://192.168.4.1:8000```.
 
+<img src="images/com.oculus.vrshell-20200209-142707.jpg" width="640">
 
 
 Blender 2.81 imports 3D models CSHP\_DV_257\_01\_\_\_\_\_\_\_00343.obj and Rosetta.blend, and exports to format three.js can read.
