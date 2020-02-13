@@ -48,7 +48,7 @@ Press one front trigger to move (two triggers to double speed).<br>
 
 Hold the left controller fixed and point the right controller in the direction to move.<br>
 
-The simple "fly" code is based on webvr_vr_ballshooter.html before the recent three.js update to WebXR in December 2019.<br>
+The simple "fly" code is based on webxr_vr_ballshooter.html.<br>
 
 Note - The white lines from the controllers are not for pointing direction to move but with seeing where the controllers are. Each line is approx 1m in length.<br>
 
