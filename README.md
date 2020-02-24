@@ -54,6 +54,10 @@ Note - The white lines from the controllers are not for pointing direction to mo
 
 Other buttons on controllers do not work, yet.<br>
 
+If no Oculus Quest, try: (tested on 2018 9.7" iPad/iPadOS 13/Safari, Windows 10/Google Chrome/Firefox)
+
+[https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-100-scale-novr.html](https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-100-scale-novr.html)
+
 # Credits
  
 ESA\_Gaia\_DR2\_AllSky\_Brightness\_Colour\_Cartesian\_2000x1000.png<br>
