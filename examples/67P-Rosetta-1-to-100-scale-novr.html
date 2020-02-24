@@ -1,0 +1,172 @@
+<!--
+
+67P-Rosetta-1-to-100-scale-novr.html
+
+https://github.com/Physicslibrary/Threejs-WebXR-67P
+
+MIT License
+
+Copyright (c) 2020 Hartwell Fong
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+February 2020.
+
+Explore Curiosity Navcams 3D images with Threejs WebGL.
+
+A 67P-Rosetta-1-to-100-scale.html version for viewing 67P-Rosetta without VR.
+
+https://github.com/Physicslibrary/Threejs-WebXR-67P
+
+This project was inspired by a European Space Agency's webpage explaining the 
+relative sizes of the Rosetta space probe to comet 67P/Churyumov-Gerasimenko.
+
+http://sci.esa.int/rosetta/54831-how-big-is-rosetta-compared-with-the-comet/
+  
+With ESA and NASA open sourcing their data such as 3D models and images, Three.js, 
+a modern web browser, and Blender is used to visualize models of a comet (4100m) 
+and Rosetta (31m) in virtual reality.
+ 
+Credits
+ 
+ESA_Gaia_DR2_AllSky_Brightness_Colour_Cartesian_2000x1000.png
+Date: 25 April 2018
+Satellite: Gaia
+Copyright: ESA/Gaia/DPAC, CC BY-SA 3.0 IGO
+http://sci.esa.int/gaia/60196-gaia-s-sky-in-colour-equirectangular-projection/
+
+CSHP_DV_25701____00343.obj (OBJ File 3.8MB)
+Copyright: ESA/Rosetta/NAVCAM – CC BY-SA IGO 3.0
+https://imagearchives.esac.esa.int/index.php?/page/navcam_3d_models
+https://imagearchives.esac.esa.int/index.php?/page/copyright_information
+
+Rosetta.blend (Rosetta.zip 4MB)
+Author/Origin: Eyes on the Solar System. NASA/JPL-Caltech
+https://nasa3d.arc.nasa.gov/detail/eoss-rosetta
+https://www.nasa.gov/multimedia/guidelines/index.html
+
+Hardware
+Worked on 2018 iPad 9.7", iPadOS 13, Safari
+Worked Windows 10, Google Chrome, Firefox
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>three.js 67P/Churyumov-Gerasimenko</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>		
+	</head>
+	<body>
+
+	<script type="module">
+  
+  import * as THREE from '../build/three.module.js';
+	import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+	import { OrbitControls } from './jsm/controls/OrbitControls.js';
+
+	var camera, scene, renderer, mesh, mesh2, mesh3, background, container, controls;
+
+	container = document.createElement('div');
+	document.body.appendChild(container);
+
+	renderer = new THREE.WebGLRenderer();
+	renderer.setPixelRatio(window.devicePixelRatio);
+	renderer.setSize(window.innerWidth, window.innerHeight);
+	container.appendChild(renderer.domElement);
+
+	renderer.outputEncoding = THREE.GammaEncoding;
+	renderer.gammaFactor = 2;
+
+	scene = new THREE.Scene();
+		
+	var loader = new THREE.TextureLoader();
+	var texture = loader.load('models/ESA_Gaia_DR2_AllSky_Brightness_Colour_Cartesian_2000x1000.png');
+	texture.magFilter = THREE.LinearFilter;
+	texture.minFilter = THREE.LinearFilter;
+				
+	var shader = THREE.ShaderLib.equirect;
+	var material = new THREE.ShaderMaterial({
+			fragmentShader: shader.fragmentShader,
+			vertexShader: shader.vertexShader,
+			uniforms: shader.uniforms,
+			depthWrite: false,
+			side: THREE.BackSide,
+			});
+				
+	material.uniforms.tEquirect.value = texture;
+	var plane = new THREE.BoxBufferGeometry(1000,1000,1000);
+	var background = new THREE.Mesh(plane,material);
+	scene.add(background);
+	
+	camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.01, 5000);
+	camera.position.set(0,1.5,2);
+
+	controls = new OrbitControls(camera, renderer.domElement);
+
+	var loader = new GLTFLoader();
+
+	loader.load( './models/67P.glb', function (gltf) {
+
+		mesh = gltf.scene;				
+		mesh.scale.set(0.01,0.01,0.01);
+		mesh.position.set(0,0,-10)
+		mesh.rotation.set(0,0,0);
+		scene.add( mesh );
+
+		} );
+
+	loader.load( "models/rosetta.glb", function (gltf) {
+
+		mesh2 = gltf.scene;
+		mesh2.scale.set(0.01,0.01,0.01);
+		mesh2.position.set(0,0,0)
+		mesh2.rotation.set(0,0,0);
+		scene.add(mesh2);
+
+		} );
+		
+	loader.load( "models/km_markers.glb", function (gltf) {
+
+		mesh3 = gltf.scene;
+		mesh3.scale.set(0.01,0.01,0.01);
+		mesh3.position.set(0,0,0)
+		mesh3.rotation.set(0,0,0);
+		scene.add(mesh3);
+
+		} );
+						
+	var animate = function() {
+
+		requestAnimationFrame(animate);
+		controls.update();
+		renderer.render(scene, camera);
+
+	}
+
+	animate();
+
+</script>
+</body>
+</html>
