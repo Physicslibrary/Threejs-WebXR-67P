@@ -142,7 +142,7 @@ After booting Raspbian and finishing initial setup, start configuring the Pi as 
 
 [https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md)
 
-In the "Configuring the access point host software (hostapd)", make own NameOfNetwork and good passwork for wpa_passphrase. For this experiment, the author finishes at "Start it up" to keep thing simple (so no internet using wireless LAN but apt-get on Pi from ethernet).
+In the "Configuring the access point host software (hostapd)", make own NameOfNetwork and good password for wpa_passphrase. For this experiment, the author finishes at "Start it up" to keep thing simple (so no internet using wireless LAN but apt-get on Pi from ethernet).
 
 Review Terminal:
 
