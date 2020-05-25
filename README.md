@@ -114,7 +114,7 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 [Rosetta and comet 67P to scale](https://sci.esa.int/web/rosetta/-/54829-rosetta-and-comet-67p-to-scale-annotated)
 
-# Making Threejs-WebXR-67P (experimental Feb 10, 2020)
+# Making Threejs-WebXR-67P (Feb 10, 2020)
 
 This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal.
 
@@ -140,9 +140,10 @@ Connect to the internet using the ethernet port. The wireless LAN will be reconf
 
 After booting Raspbian and finishing initial setup, start configuring the Pi as a wireless access point:
 
-[https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md)
+[https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md]
+(https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md)
 
-In the "Configuring the access point host software (hostapd)", make own NameOfNetwork and good password for wpa_passphrase. For this experiment, the author finishes at "Start it up" to keep thing simple (so no internet using wireless LAN but apt-get on Pi from ethernet).
+In "Configure the access point software", make own NameOfNetwork and good password for wpa_passphrase. The author skips section "Enable routing and IP masquerading" to keep thing simple (so no internet access from Pi wireless LAN but apt-get work with ethernet). This is useful in developing and serving three.js from a Raspberry Pi with Oculus Quest wifi connected.<br>
 
 Review Terminal:
 
