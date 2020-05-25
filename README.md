@@ -140,8 +140,7 @@ Connect to the internet using the ethernet port. The wireless LAN will be reconf
 
 After booting Raspbian and finishing initial setup, configure Pi as a wireless access point:
 
-[https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md]
-(https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md)
+[https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md](https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md)
 
 In "Configure the access point software", make own NameOfNetwork and good password for wpa_passphrase. The author skips section "Enable routing and IP masquerading" to keep thing simple (so no internet access from Pi wireless LAN but apt-get work with ethernet). This is useful in developing and serving three.js from a Raspberry Pi with Oculus Quest wifi connected.<br>
 
