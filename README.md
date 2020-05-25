@@ -24,11 +24,11 @@ With ESA and NASA open sourcing their data such as 3D models and images, Three.j
 
 # Hardware
 
-Oculus Quest recommended (required 6DoF headset/controllers).<br>
+Oculus Quest recommended (6DoF headset/controllers).<br>
 
 # Software
 
-Oculus Browser (Oculus Quest Firmware update 12.0 or later).
+Oculus Browser (tested Quest Update >17.0).<br>
 
 # Installation
 
@@ -138,7 +138,7 @@ Make a bootable Raspbian micro SD card:
 
 Connect to the internet using the ethernet port. The wireless LAN will be reconfigured and not available for internet connection.
 
-After booting Raspbian and finishing initial setup, start configuring the Pi as a wireless access point:
+After booting Raspbian and finishing initial setup, configure Pi as a wireless access point:
 
 [https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md]
 (https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md)
