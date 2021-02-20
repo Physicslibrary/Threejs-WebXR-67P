@@ -116,6 +116,8 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 # Making Threejs-WebXR-67P (Feb 10, 2020)
 
+# (Update) Feb 20, 2021. This section is out of date. May be useful as a reference. Its purpose is to show how to use a Raspberry Pi (with built-in wifi) to serve a webpage to an Oculus Quest. "sudo apt-get install http-server -g" no longer work on lastest Raspberry Pi OS. Will be updated after experimenting with Raspberry Pi OS image.<br>
+
 This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal.
 
 Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ by coding three.js HTML5 files and Node.js to serve them:
