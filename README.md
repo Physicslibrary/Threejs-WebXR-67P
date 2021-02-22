@@ -176,7 +176,7 @@ Open Chromium, and go to:
 
 Click "download" to download master.zip.
 
-After download is completed, extract three.js-master.zip to webvr.
+After download is completed, extract master.zip to webvr.
 
 ~~In webvr directory, type:~~
 
