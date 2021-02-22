@@ -16,7 +16,7 @@ This project was inspired by a European Space Agency's webpage explaining the re
  
 [ESA: How big is Rosetta compared with the comet?](http://sci.esa.int/rosetta/54831-how-big-is-rosetta-compared-with-the-comet/)
  
-With ESA and NASA open sourcing their data such as 3D models and images, Three.js, a modern web browser with WebXR, and Blender can be used to visualize models of a comet (4100m) and Rosetta (32m) in virtual reality.
+With ESA and NASA open sourcing their data such as 3D models and images, Three.js, a web browser with WebXR, and Blender can be used to visualize models of a comet (4100m) and Rosetta (32m) in virtual reality.
 
 # Threejs-WebXR-67P Pages
 
@@ -38,7 +38,7 @@ No installation. In Oculus Quest, open Oculus Browser and go to link:
 
 [https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-1-scale.html](https://physicslibrary.github.io/Threejs-WebXR-67P/examples/67P-Rosetta-1-to-1-scale.html)
 
-With Oculus Quest's headset 6DoF tracking, freely walk around Rosetta/67P within Oculus Guardian system. Use Oculus Touch controllers to go to areas out of reach.<br>
+With Oculus Quest's headset 6DoF tracking, freely look around Rosetta/67P within Oculus Guardian system. Use Oculus Touch controllers to go to areas out of reach.<br>
 
 Use Oculus Touch controllers to "fly" around Rosetta and comet 67P. It implements a simple way to move around 3D by making a "velocity vector" from left to right controllers.<br>
 
@@ -90,19 +90,19 @@ km_markers.glb is created in Blender as a series of 10x10x10m cubes spaced by 1k
 
 [https://github.com/mrdoob/three.js/](https://github.com/mrdoob/three.js/)
 
-Three.js examples is the best place to learn and experiment:
+Three.js examples is a fantastic place to learn and experiment:
 
 [https://github.com/mrdoob/three.js/tree/dev/examples](https://github.com/mrdoob/three.js/tree/dev/examples)
 
-Three.js' excellent documentation on how to convert WebGL examples to WebVR:
+How to convert WebGL examples to WebVR:
 
 [https://threejs.org/docs/index.html#manual/en/introduction/How-to-create-VR-content](https://threejs.org/docs/index.html#manual/en/introduction/How-to-create-VR-content)
 
-Three.js example of how to use the controllers:
+How to use the controllers:
 
 [https://github.com/mrdoob/three.js/blob/dev/examples/webxr_vr_ballshooter.html](https://github.com/mrdoob/three.js/blob/dev/examples/webxr_vr_ballshooter.html)
 
-Three.js example of how to load .glb file:
+How to load .glb file:
 
 [https://github.com/mrdoob/three.js/blob/dev/examples/webgl_loader_gltf.html](https://github.com/mrdoob/three.js/blob/dev/examples/webgl_loader_gltf.html)
 
@@ -116,11 +116,11 @@ Near the end of the webpage is an example of displaying an equirectangular map:
 
 # Making Threejs-WebXR-67P (Feb 10, 2020)
 
-# (Update) Feb 20, 2021. This section is out of date. May be useful as a reference. Its purpose is to show how to use a Raspberry Pi (with built-in wifi) to serve a webpage to an Oculus Quest. "sudo apt-get install http-server -g" no longer work on lastest Raspberry Pi OS. Will be updated after experimenting with Raspberry Pi OS image.<br>
+# (Update) Feb 20, 2021. This section shows how to use a Raspberry Pi (with built-in wifi) to serve a webpage to an Oculus Quest. "sudo apt-get install http-server -g" is not working on latest Raspberry Pi OS. An alternative is websocketd to serve a webpage (websocketd can pipe sensor readings from a Raspberry Pi gpio to a websocket easily with python or C.<br>
 
-This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal.
+This section assumes users know what a Raspberry Pi single-board computer is and how to use a Linux terminal. Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ by coding three.js html5 files.<br>
 
-Threejs-WebXR-67P is developed on a Raspberry Pi Model 3B+ by coding three.js HTML5 files and Node.js to serve them:
+The following link is for reference. This is where the author first learned about Node.js http-server.<br>
 
 [https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally](https://threejs.org/docs/index.html#manual/en/introduction/How-to-run-things-locally)
 
@@ -130,9 +130,9 @@ Raspberry Pi Model 3B+ has an ethernet port and wireless LAN. We will be making 
 
 [https://www.raspberrypi.org/help/](https://www.raspberrypi.org/help/)
 
-Get Raspbian Buster with desktop (tested February 2020, 1138 MB version) from:
+Get Raspberry Pi OS ~~Buster~~ with desktop ~~(tested February 2020, 1138 MB version)~~ from:
 
-[https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/)
+[https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)
 
 Make a bootable Raspbian micro SD card:
 
@@ -150,15 +150,17 @@ Review Terminal:
 
 [https://www.raspberrypi.org/documentation/usage/terminal/](https://www.raspberrypi.org/documentation/usage/terminal/)
 
-In a Terminal, run:
+~~In a Terminal, run:~~
 
-sudo apt-get install npm
+~~sudo apt-get install npm~~
 
-sudo apt-get install http-server -g
+~~sudo apt-get install http-server -g~~
 
-(Ref: [https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server))
+~~(Ref: [https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server))~~
 
-In home directory,
+In a terminal (in home directory),
+
+cd ~
 
 mkdir webvr<br>
 
@@ -172,13 +174,27 @@ Open Chromium, and go to:
 
 [https://threejs.org/](https://threejs.org/)
 
-Click "download" and three.js-master.zip should download.
+Click "download" to download master.zip.
 
 After download is completed, extract three.js-master.zip to webvr.
 
-In webvr directory, type:
+~~In webvr directory, type:~~
 
-http-server . -p 8000 -S
+~~http-server . -p 8000 -S~~
+
+One way to serve a webpage from a Raspberry Pi is websocketd.<br>
+
+http://websocketd.com/ (more on https://github.com/joewalnes/websocketd)<br>
+
+Websocketd is used in another project (https://github.com/Physicslibrary/Threejs-VR-Sensors) to read sensors from Pi gpio to an Oculus Quest browser.
+
+There is a Linux ARM version for the Raspberry Pi in "Download".<br>
+
+Put websocketd in webvr directory with key.pem and cert.pem.<br>
+
+./websocketd --port=8000 --ssl --sslkey=key.pem --sslcert=cert.pem --staticdir=.<br>
+
+(ctrl-c to end program)<br>
 
 In Chromium, enter ```https://127.0.0.1:8000``` and should get a warning "Your connection is not private". Proceed in "Advanced" as you are connecting to your own Raspberry Pi.
 
